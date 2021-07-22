@@ -14,14 +14,12 @@ const Form = (props) => {
   async function getUser(enteredUsername){
     try {
       const {data} = await axios(baseUrl + enteredUsername)
-      console.log(data)
+      props.onSaveUsername(data)
     } catch(err){
       console.log(err)
     }
   }
   
-
-
   const submitHandler = (e) => {
     e.preventDefault();
     const user = enteredUsername
