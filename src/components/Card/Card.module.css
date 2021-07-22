@@ -1,0 +1,60 @@
+.card {
+  max-width: 800px;
+  background-color: rgb(10, 10, 83);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0,0,0, 0.1);
+  display: flex;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 5px solid white;
+  height: 150px;
+  width: 150px;
+}
+
+.userInfo {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.userInfo h3 {
+  margin-top: 0;
+}
+
+.userInfo ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.userInfo ul li {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+  color: white;
+  background-color: #212a72;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}

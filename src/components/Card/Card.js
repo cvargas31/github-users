@@ -1,13 +1,15 @@
 import React from 'react'
+import classes from './Card.module.css'
+
 
 const Card = () => {
   return (
-    <div>
-      <div>
-        <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="" className="" />
+    <div className={classes.card}>
+      <div >
+        <img className={classes.avatar} src="https://randomuser.me/api/portraits/men/28.jpg" alt="" />
       </div>
 
-      <div>
+      <div className={classes.userInfo}>
         <h3>Cristhian</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, incidunt.</p>
 
@@ -16,13 +18,14 @@ const Card = () => {
           <li>100 <strong>Following</strong></li>
           <li>30 <strong>Repos</strong></li>
         </ul>
-      </div>
 
       <div>
-        <a href="">Repo 1</a>
-        <a href=""> Repo 2</a>
-        <a href="">repo 3</a>
+        <a href="https://google.com" className={classes.repo}>Repo 1</a>
+        <a href="https://google.com" className={classes.repo}> Repo 2</a>
+        <a href="https://google.com" className={classes.repo}>Repo 3</a>
       </div>
+      </div>
+
     </div>
   )
 }
